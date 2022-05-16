@@ -9,14 +9,13 @@ import Moya
 
 protocol APITarget: TargetType {
     var endPoint: Endpoint { get }
-    var versionPath: String { get }
     var defaultJSONEncoder: JSONEncoder { get }
 }
 
 extension APITarget {
 
     var baseURL: URL {
-        return APIHost.baseURL.appendingPathComponent(versionPath)
+        return APIHost.baseURL
     }
 
     var sampleData: Data {
@@ -25,10 +24,6 @@ extension APITarget {
 
     var headers: [String: String]? {
         return nil
-    }
-
-    var versionPath: String {
-        return "3"
     }
 
     var endPoint: Endpoint {

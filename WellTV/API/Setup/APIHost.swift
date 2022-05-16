@@ -10,18 +10,7 @@ import Foundation
 enum APIHost {
     
     static var baseURL: URL {
-        return URL(string: "https://api.themoviedb.org/")!
+        return URL(string: "https://api.tvmaze.com")!
     }
     
-    static var baseImageURL: URL {
-        return URL(string: "https://image.tmdb.org/t/p/original")!
-    }
-    
-    static var apiKey: String {
-        return "a767131adda7e3bbc22369a6e3b2bae4"
-    }
-    
-    static var language: String {
-        return Locale.autoupdatingCurrent.languageCode ?? "en-US"
-    }
 }

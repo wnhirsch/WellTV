@@ -11,6 +11,7 @@ target 'WellTV' do
   pod 'Alamofire'
   pod 'Moya'
   pod 'Kingfisher'
+  pod 'SnapKit'
 
   target 'WellTVTests' do
     inherit! :search_paths
